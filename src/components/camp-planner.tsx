@@ -227,7 +227,7 @@ export default function CampPlanner() {
               onClick={exportWord}
               disabled={exporting !== null}
             >
-              <FileText size={17} /> Word
+              <FileText size={17} /> تنزيل Word
             </button>
             <button
               className="button primary"
@@ -235,7 +235,7 @@ export default function CampPlanner() {
               onClick={exportPdf}
               disabled={exporting !== null}
             >
-              <FileDown size={17} /> PDF
+              <FileDown size={17} /> تنزيل PDF
             </button>
           </div>
           <input
