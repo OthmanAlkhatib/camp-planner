@@ -192,7 +192,7 @@ export default function CampPlanner() {
           </span>
           <div>
             <strong>مخطط المخيم</strong>
-            <span>من الفكرة إلى التقييم</span>
+            <span dir="rtl">خطط، نفّذ، قيّم</span>
           </div>
         </div>
         <div className="topbar-actions">
