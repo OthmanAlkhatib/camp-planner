@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": ".test-dist",
+    "rootDir": "src/lib",
+    "types": ["node"]
+  },
+  "include": ["src/lib/camp-plan.ts", "src/lib/camp-plan.test.ts"],
+  "exclude": ["node_modules"]
+}
