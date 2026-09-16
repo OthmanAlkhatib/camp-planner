@@ -154,6 +154,17 @@ button:disabled {
   background: transparent;
   border-color: rgba(255, 255, 255, 0.17);
 }
+.button.feedback-link {
+  color: #173d34;
+  background: #fffefb;
+  border-color: rgba(217, 174, 72, 0.75);
+  text-decoration: none;
+  box-shadow: 0 3px 0 rgba(217, 174, 72, 0.85);
+}
+.button.feedback-link:hover {
+  color: var(--green);
+  background: #fff9e8;
+}
 .save-state {
   gap: 6px;
   margin-left: 3px;
