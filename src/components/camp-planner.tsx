@@ -10,6 +10,7 @@ import {
   Heading,
   Import,
   LayoutList,
+  MessageSquarePlus,
   Plus,
   RotateCcw,
   Save,
@@ -44,6 +45,10 @@ const navigation = [
   { id: 'after', number: '04', label: 'بعد المخيم' },
   { id: 'custom', number: '+', label: 'محتوى إضافي' },
 ];
+
+const FEEDBACK_URL =
+  process.env.NEXT_PUBLIC_FEEDBACK_URL ??
+  'https://feedback-to-code-platform.vercel.app/feedback/camp-planner';
 
 export default function CampPlanner() {
   const [plan, setPlan] = useState<CampPlan>(() => createDefaultCampPlan());
@@ -196,6 +201,9 @@ export default function CampPlanner() {
           </div>
         </div>
         <div className="topbar-actions">
+          <a className="button feedback-link" href={FEEDBACK_URL} target="_blank" rel="noreferrer">
+            <MessageSquarePlus size={17} /> أرسل ملاحظتك
+          </a>
           <span className={`save-state save-${saveState}`}>
             {saveState === 'saving' ? (
               <Save size={15} />
